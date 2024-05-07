@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -14,7 +15,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Skill</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -30,7 +31,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skill</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -98,16 +99,26 @@
         </div> -->
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div
+              class="details-container"
+              data-aos="fade-right"
+              data-aos-delay="600"
+              data-aos-duration="700"
+            >
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Experience</h3>
+              <h3>Skill</h3>
               <p>1+ years <br />Frontend Development</p>
             </div>
-            <div class="details-container">
+            <div
+              class="details-container"
+              data-aos="fade-left"
+              data-aos-delay="600"
+              data-aos-duration="700"
+            >
               <img
                 src="./assets/education.png"
                 alt="Education icon"
@@ -117,7 +128,12 @@
               <p>B.S Bachelors Degree</p>
             </div>
           </div>
-          <div class="text-container">
+          <div
+            class="text-container"
+            data-aos="fade-in"
+            data-aos-delay="800"
+            data-aos-duration="700"
+          >
             <p>
               Hello, I am currently a second-year student pursuing a Bachelor of
               Science in Data Science and Applications from the esteemed Indian
@@ -141,10 +157,15 @@
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skill</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div
+            class="details-container"
+            data-aos="fade-in"
+            data-aos-delay="600"
+            data-aos-duration="700"
+          >
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
@@ -215,7 +236,12 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div
+            class="details-container"
+            data-aos="fade-in"
+            data-aos-delay="600"
+            data-aos-duration="700"
+          >
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
@@ -275,7 +301,12 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div
+            class="details-container"
+            data-aos="fade-in"
+            data-aos-delay="600"
+            data-aos-duration="700"
+          >
             <h2 class="experience-sub-title">App Development</h2>
             <div class="article-container">
               <article>
@@ -305,7 +336,12 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div
+            class="details-container color-container"
+            data-aos="fade-in"
+            data-aos-delay="600"
+            data-aos-duration="700"
+          >
             <div class="article-container">
               <img
                 src="./assets/budget.jpg"
@@ -331,7 +367,12 @@
               </a>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div
+            class="details-container color-container"
+            data-aos="fade-in"
+            data-aos-delay="600"
+            data-aos-duration="700"
+          >
             <div class="article-container">
               <img
                 src="./assets/novel.jpg"
@@ -357,7 +398,12 @@
               </a>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div
+            class="details-container color-container"
+            data-aos="fade-in"
+            data-aos-delay="600"
+            data-aos-duration="700"
+          >
             <div class="article-container">
               <img
                 src="./assets/minorityrule.jpg"
@@ -385,7 +431,12 @@
               </a>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div
+            class="details-container color-container"
+            data-aos="fade-in"
+            data-aos-delay="600"
+            data-aos-duration="700"
+          >
             <div class="article-container">
               <img
                 src="./assets/photoapp.jpg"
@@ -447,7 +498,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Skill</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -455,6 +506,8 @@
       </nav>
       <p>Copyright &#169; 2024 Aayush Sinha. All Rights Reserved.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
